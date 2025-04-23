@@ -1,0 +1,104 @@
+\documentclass{ama}
+
+% Load custom packages here, e.g.:
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\addbibresource{refs.bib}
+
+\topic{X-42}
+
+\title{Proceedings Preparation Guidelines for the 2025 International Congress on Ultrasonics}
+
+\author[1]{First Author}
+\author[1]{\underline{Presenting Author}}
+\author[2]{Third Author}
+
+\affil[1]{Institution or company, address and country}
+\affil[2]{Institution or company, address and country}
+
+\email{corresponding.authors@e-mail.address}
+
+\abstract{%
+    Briefly describe the highlights of your work in max. 6 lines.
+    Please do not use symbols in the summary.
+}
+
+\keywords{%
+    List five descriptive keywords, separated by a comma.
+    These will be included in the index of keywords in the electronic conference volume.
+}
+
+\begin{document}
+
+\section{Title and Headlines}
+In the main title, please use initial capital letters.
+Do not capitalize articles (like `the'), coordinate conjunctions (`the'), and prepositions (`of', `in') under four letters in length.
+Underline the presenting author.
+
+\section{Background, Motivation and Objective}
+To introduce your topic please give a short background motivation and refer to selected relevant literature.
+Take care that your contribution is in line with the suggested topic on top of the page.
+Choose an adequate title that reveals the aim of your work.
+Experimental details should be shown only as distinctive features to describe important information.
+
+\section{Results}
+Only original scientific results and significant findings and developments in the specific field should be presented.
+Please arrange figures in a way that important information can be caught at a glance.
+Sometimes, a picture says a thousand words.
+
+\section{Pagination}
+Please do not put page numbers on the paper.
+%
+\begin{figure}
+    \centering
+    \input{fig1.tikz}
+    \caption{Graph of variable vs analyte concentration for two different temperatures.}\label{fig:ex1}
+\end{figure}
+
+\section{Equations}
+Equations should appear in a separate line.
+Please refer your equations in the text as \autoref{eq:ex1}.
+\begin{equation}
+    R = \frac{U}{I}\label{eq:ex1}
+\end{equation}
+
+\section{Graphics, Photographs, and Tables}
+Please arrange figures in a way that important information can be caught at a glance.
+Illustrations, graphs, and photographs should be centred, preferably fit in one column (see \autoref{fig:ex1}), and either be placed at the top \texttt{[t]} or at the bottom \texttt{[b]} of a column.
+The resolution for photographs and graphics should not exceed 300 dpi.
+
+The caption is placed above a table (i.e.\ \autoref{tab:ex1}) and below a figure (i.e.\ \autoref{fig:ex1}), picture, or graphic distinctive features to describe important information.
+%
+\begin{table}[b]
+    \caption{Table captions should be place above the table they are describing.}\label{tab:ex1}
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        \(T / \si{\celsius}\) & Sensitivity of & Coefficient of \\
+        & variable towards & determination \(R^2\)  \\
+        & N\textsubscript{2}O & \\
+        \midrule
+        \num{300} & \num{0.8} & \num{0.9998} \\
+        \midrule
+        \num{400} & \num{1} & \num{0.9994} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{References}
+List and number all bibliographical references at the end of the paper.
+When referenced within the text, enclose the citation number in square brackets, i.e.~\cite{mouse2011}.
+
+\printbibliography{}
+
+\section{Please Note}
+Your document is expected to have a total length of four (4) pages.
+Company logos may not be included in the short paper.
+By submitting your short paper you allow the organizer to publish your submission in the electronic conference proceedings and on the web.
+The papers will receive a Digital Object Identifier (DOI).
+The Authors are responsible for obtaining any permissions which may be required from governments, industries and/or other organizations.
+No responsibility is accepted by the organizer.
+Work that is not original or that has been presented in other international conferences or publications will not be accepted unless considerable progress has been achieved.
+
+\end{document}

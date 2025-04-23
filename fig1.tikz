@@ -1,0 +1,66 @@
+\begin{tikzpicture}[font=\footnotesize]
+
+\begin{axis}[
+width=\linewidth,
+xlabel={Concentration \(c_\mathrm{N\textsubscript{2}O}\) / \si{ppm}},
+xmin=0, xmax=10,
+ylabel={Quantity \(q\) / \si{Unit}},
+ymin=0, ymax=10,
+legend pos=south east
+]
+\addplot[only marks, mark=*]
+table{%
+x y
+0 0
+1 1.07
+2 2.00
+3 2.88
+4 3.99
+5 4.99
+6 6.21
+7 7.01
+8 7.90
+9 9.04
+10 10
+};\addlegendentry{\SI{400}{\celsius}}
+
+\addplot[only marks, mark=square*, color=gray]
+table{%
+x y
+0 0
+1 0.77
+2 1.62
+3 2.38
+4 3.27
+5 4.00
+6 4.81
+7 5.60
+8 6.51
+9 7.20
+10 8
+};\addlegendentry{\SI{300}{\celsius}}
+
+\addplot[thick]
+table{%
+x y
+0 0
+10 10
+};
+
+\addplot[thick, color=gray, dashed]
+table{%
+x y
+0 0
+10 8
+};
+
+\node[align=left, anchor=north west] at (axis cs:0.25,9.75) {%
+    Base gas: \SI{20}{\percent} O\textsubscript{2} in N\textsubscript{2}
+};
+\node[align=left, anchor=north west] at (axis cs:0.25,8.5) {%
+    Self-heated sensor element\\
+    Pt-doped functional material
+};
+\end{axis}
+
+\end{tikzpicture}
