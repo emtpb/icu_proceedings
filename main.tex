@@ -47,6 +47,26 @@ Only original scientific results and significant findings and developments in th
 Please arrange figures in a way that important information can be caught at a glance.
 Sometimes, a picture says a thousand words.
 
+\section{Compiling}
+The document can be compiled using the typical routine of \LaTeX{} commands:
+%
+\begin{verbatim}
+    pdflatex main.tex
+    biber main
+    pdflatex main.tex
+    pdflatex main.tex
+\end{verbatim}
+%
+Make sure to use \texttt{biber} to build the bibliography.
+The \texttt{pdflatex} and \texttt{biber} commands should be available on all common \LaTeX{} distributions.
+If available, \texttt{latexmk} can be used to perform all necessary steps in one command:
+%
+\begin{verbatim}
+    latexmk -pdf main.tex
+\end{verbatim}
+%
+Please ensure that all references to literature and figures are displayed correctly before submitting the document.
+
 \section{Pagination}
 Please do not put page numbers on the paper.
 %
