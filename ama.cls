@@ -83,9 +83,9 @@
 \AddToHook{begindocument/end}{%
     \twocolumn[%
         \vspace{-10mm}
-        \fbox{\begin{minipage}[c]{0.7\linewidth}
+        {\color{gray}\fbox{\begin{minipage}[c]{0.7\linewidth}
             \large\strut Topic: \@topic
-        \end{minipage}}\par
+        \end{minipage}}}\par
         \vspace{10mm}
 
         \begin{center}
