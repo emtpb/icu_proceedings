@@ -61,6 +61,23 @@
 ]{section}
 \setcounter{secnumdepth}{0}
 
+% Disable subsection, subsubsections and paragraphs
+\renewcommand{\subsection}{%
+    \ClassError{AMA}{Subsections are not available}{%
+        Please only use sections to structure your document.%
+    }%
+}
+\renewcommand{\subsubsection}{%
+    \ClassError{AMA}{Subsubsections are not available}{%
+        Please only use sections to structure your document.%
+    }%
+}
+\renewcommand{\paragraph}{%
+    \ClassError{AMA}{Paragraphs are not available}{%
+        Please only use sections to structure your document.%
+    }%
+}
+
 % Caption style
 \setcapindent{0mm}
 \setkomafont{captionlabel}{\itshape}
