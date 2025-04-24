@@ -24,7 +24,6 @@
 
 % Loading packages
 \RequirePackage[UKenglish]{babel}
-\RequirePackage{helvet}
 \RequirePackage[nopatch=eqnum]{microtype}
 \RequirePackage{authblk}
 \RequirePackage[%
