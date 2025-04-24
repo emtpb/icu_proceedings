@@ -85,7 +85,7 @@
         {\color{gray}\fbox{\begin{minipage}[c]{0.7\linewidth}
             \large\strut Topic: \@topic
         \end{minipage}}}\par
-        \vspace{10mm}
+        \vspace{8mm}
 
         \begin{center}
             {\Large\bfseries\@title\par}
@@ -95,9 +95,8 @@
             \@email
         \end{center}
 
-        \textbf{Abstract:}\par
-        \@abstract\par
-        \vspace{4mm}
+        \textbf{Abstract:} \@abstract\par
+        \vspace{2mm}
         \textbf{Keywords:} \@keywords\par
         \vspace{4mm}
     ]%
