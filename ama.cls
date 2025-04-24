@@ -8,7 +8,7 @@
     a4paper,
     fontsize=10pt,
     twocolumn=true,
-    DIV=13,
+    DIV=15,
     captions=tableheading
 ]{scrartcl}
 
@@ -49,7 +49,7 @@
 \renewcommand\Affilfont{\itshape}
 
 % Page layout and style
-\setlength\columnsep{10mm}
+\setlength\columnsep{8mm}
 \pagestyle{empty}
 \renewcommand{\floatpagefraction}{0.9}
 
