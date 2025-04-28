@@ -105,7 +105,7 @@
         \hfill
         {\begin{minipage}[c]{0.33\linewidth}
             \raggedleft
-            \includegraphics[width=\linewidth]{logo.pdf}
+            \includegraphics[width=\linewidth]{graphics/logo.pdf}
         \end{minipage}}
         \vspace{10mm}
 
