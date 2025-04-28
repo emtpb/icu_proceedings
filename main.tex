@@ -21,8 +21,8 @@
 \email{corresponding.authors@e-mail.example}
 
 \abstract{%
-    Briefly describe the highlights of your work in max. 6 lines.
-    Please do not use symbols in the summary.
+    Briefly describe the highlights of your work in a maximum of 6 lines.
+    Please do not use symbols and references to literature in the summary.
 }
 
 \keywords{%
@@ -36,6 +36,7 @@
 In the main title, please use initial capital letters.
 Do not capitalize articles (like `the'), coordinate conjunctions (`the'), and prepositions (`of', `in') under four letters in length.
 Underline the presenting author.
+Please only use sections to structure the manuscript.
 
 \section{Background, Motivation and Objective}
 To introduce your topic please give a short background motivation and refer to selected relevant literature.
@@ -45,8 +46,8 @@ Experimental details should be shown only as distinctive features to describe im
 
 \section{Results}
 Only original scientific results and significant findings and developments in the specific field should be presented.
-Please arrange figures in a way that important information can be caught at a glance.
-Sometimes, a picture says a thousand words.
+Please arrange figures so that important information can be seen at a glance.
+Sometimes a picture is worth a thousand words.
 
 \section{Compiling}
 The document can be compiled using the typical routine of \LaTeX{} commands:
@@ -60,7 +61,7 @@ The document can be compiled using the typical routine of \LaTeX{} commands:
 %
 Make sure to use \texttt{biber} to build the bibliography.
 The \texttt{pdflatex} and \texttt{biber} commands should be available on all common \LaTeX{} distributions.
-If available, \texttt{latexmk} can be used to perform all necessary steps in one command:
+To perform all the necessary steps in a single command, \texttt{latexmk} can be used if available:
 %
 \begin{verbatim}
     latexmk -pdf main.tex
@@ -80,6 +81,7 @@ Please do not put page numbers on the paper.
 \section{Equations}
 Equations should appear in a separate line.
 Please refer your equations in the text as \autoref{eq:ex1}.
+%
 \begin{equation}
     R = \frac{U}{I}\label{eq:ex1}
 \end{equation}
@@ -87,9 +89,10 @@ Please refer your equations in the text as \autoref{eq:ex1}.
 \section{Graphics, Photographs, and Tables}
 Please arrange figures in a way that important information can be caught at a glance.
 Illustrations, graphs, and photographs should be centred, preferably fit in one column (see \autoref{fig:ex1}), and either be placed at the top \texttt{[t]} or at the bottom \texttt{[b]} of a column.
-The resolution for photographs and graphics should not exceed 300 dpi.
+The resolution for photographs should not exceed 300 dpi.
+The use of colour is encouraged, but please make sure that the figures can still be interpreted when converted to greyscale.
 
-The caption is placed above a table (i.e.\ \autoref{tab:ex1}) and below a figure (i.e.\ \autoref{fig:ex1}), picture, or graphic distinctive features to describe important information.
+Captions are placed above tables (i.e.\ \autoref{tab:ex1}) and below figures (i.e.\ \autoref{fig:ex1}), picture, or graphic.
 %
 \begin{table}
     \caption{Table captions should be place above the table they are describing.}\label{tab:ex1}
