@@ -99,10 +99,15 @@
 \AddToHook{begindocument/end}{%
     \twocolumn[%
         \vspace{-10mm}
-        {\color{gray}\fbox{\begin{minipage}[c]{0.7\linewidth}
-            \large\strut Topic: \@topic
-        \end{minipage}}}\par
-        \vspace{8mm}
+        {\color{gray}\fbox{\begin{minipage}[c]{0.33\linewidth}
+            \large Topic: \@topic
+        \end{minipage}}}
+        \hfill
+        {\begin{minipage}[c]{0.33\linewidth}
+            \raggedleft
+            \includegraphics[width=\linewidth]{logo.pdf}
+        \end{minipage}}
+        \vspace{10mm}
 
         \begin{center}
             {\Large\bfseries\@title\par}
