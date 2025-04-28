@@ -8,7 +8,7 @@
     a4paper,
     fontsize=10pt,
     twocolumn=true,
-    DIV=15,
+    DIV=13,
     captions=tableheading
 ]{scrartcl}
 
