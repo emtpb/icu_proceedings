@@ -1,0 +1,22 @@
+name: "Build pdf"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/moderncv/debian-texlive-docker:main
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build pdf
+        run: latexmk -pdf main.tex
+      - name: Upload pdf file
+        uses: alexellis/upload-assets@0.4.0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          asset_paths: '["main.pdf"]'
