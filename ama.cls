@@ -109,17 +109,19 @@
         \end{minipage}}
         \vspace{10mm}
 
-        \begin{center}
-            {\Large\bfseries\@title\par}
-            \vspace{4mm}
-            \AB@authlist\par
-            \AB@affillist\par
-            \@email
-        \end{center}
+        \centerline{\begin{minipage}{0.85\linewidth}
+            \begin{center}
+                {\Large\bfseries\@title\par}
+                \vspace{4mm}
+                \AB@authlist\par
+                \AB@affillist\par
+                \@email
+            \end{center}
 
-        \textbf{Abstract:} \@abstract\par
-        \vspace{2mm}
-        \textbf{Keywords:} \@keywords\par
-        \vspace{4mm}
+            \textbf{Abstract:} \@abstract\par
+            \vspace{2mm}
+            \textbf{Keywords:} \@keywords\par
+            \vspace{6mm}
+        \end{minipage}}
     ]%
 }
