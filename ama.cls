@@ -23,6 +23,7 @@
 \newcommand*{\keywords}[1]{\gdef\@keywords{#1}}
 
 % Loading packages
+\RequirePackage[T1]{fontenc}
 \RequirePackage[UKenglish]{babel}
 \RequirePackage[nopatch=eqnum]{microtype}
 \RequirePackage{authblk}
