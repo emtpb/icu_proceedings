@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ama}[2025 AMA]
 
-\usepackage[utf8]{inputenc}
+\RequirePackage[utf8]{inputenc}
 
 % Load base class with options
 \LoadClass[%
