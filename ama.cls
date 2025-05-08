@@ -37,7 +37,6 @@
 ]{biblatex}
 \RequirePackage{csquotes}
 \RequirePackage{booktabs}
-\RequirePackage{graphicx}
 \RequirePackage{amsmath}
 \RequirePackage{siunitx}
 \RequirePackage{hyperref}
