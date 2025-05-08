@@ -39,7 +39,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{amsmath}
 \RequirePackage{siunitx}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 
 % Font style and selection
 \renewcommand{\familydefault}{\sfdefault}
