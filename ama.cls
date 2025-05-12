@@ -52,6 +52,9 @@
 \pagestyle{empty}
 \renewcommand{\floatpagefraction}{0.9}
 
+% Modifications to author block
+\renewcommand\AB@authnote[1]{\hspace{0.12em}{\normalfont{\textsuperscript{#1}}}}
+
 % Section header style
 \RedeclareSectionCommand[
     afterindent=false,
