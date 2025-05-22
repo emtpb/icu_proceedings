@@ -24,7 +24,7 @@
 
 % Loading packages
 \RequirePackage[T1]{fontenc}
-\RequirePackage[UKenglish]{babel}
+\RequirePackage[english]{babel}
 \RequirePackage[nopatch=eqnum]{microtype}
 \RequirePackage{authblk}
 \RequirePackage[%
@@ -86,8 +86,8 @@
 \setcapindent{0mm}
 \setkomafont{captionlabel}{\itshape}
 \setkomafont{caption}{\itshape}
-\renewcaptionname{UKenglish}{\figurename}{Fig.}
-\renewcaptionname{UKenglish}{\tablename}{Tab.}
+\renewcaptionname{english}{\figurename}{Fig.}
+\renewcaptionname{english}{\tablename}{Tab.}
 
 % Equation reference style (always use parenthesis)
 \renewcommand{\tagform@}[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
@@ -95,9 +95,9 @@
 \renewcommand{\theequation}{(\orgtheequation)}
 
 % Automatic referencing labels (always abbreviate)
-\renewcaptionname{UKenglish}{\equationautorefname}{Eq.}
-\renewcaptionname{UKenglish}{\figureautorefname}{Fig.}
-\renewcaptionname{UKenglish}{\tableautorefname}{Tab.}
+\renewcaptionname{english}{\equationautorefname}{Eq.}
+\renewcaptionname{english}{\figureautorefname}{Fig.}
+\renewcaptionname{english}{\tableautorefname}{Tab.}
 
 % Modifications to reference style
 \DeclareFieldFormat{doi}{
