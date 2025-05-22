@@ -29,7 +29,7 @@
 \RequirePackage{authblk}
 \RequirePackage[%
     backend=biber,
-    style=ieee,
+    style=numeric,
     giveninits=true,
     natbib=true,
     hyperref=true,
@@ -46,6 +46,7 @@
 \frenchspacing
 \renewcommand\Authfont{\itshape}
 \renewcommand\Affilfont{\itshape}
+\urlstyle{same}
 
 % Page layout and style
 \setlength\columnsep{8mm}
@@ -97,6 +98,14 @@
 \renewcaptionname{UKenglish}{\equationautorefname}{Eq.}
 \renewcaptionname{UKenglish}{\figureautorefname}{Fig.}
 \renewcaptionname{UKenglish}{\tableautorefname}{Tab.}
+
+% Modifications to reference style
+\DeclareFieldFormat{doi}{
+    DOI\addcolon\space\href{https://doi.org/#1}{\nolinkurl{#1}}
+}
+\DeclareFieldFormat{url}{
+    URL\addcolon\space\url{#1}
+}
 
 % Automatically place document title, authors, abstract, etc.
 \AddToHook{begindocument/end}{%
