@@ -106,6 +106,12 @@
 \DeclareFieldFormat{url}{
     URL\addcolon\space\url{#1}
 }
+\DeclareFieldFormat{isbn}{
+    ISBN\addcolon\space#1
+}
+\DeclareFieldFormat{issn}{
+    ISSN\addcolon\space#1
+}
 
 % Automatically place document title, authors, abstract, etc.
 \AddToHook{begindocument/end}{%
